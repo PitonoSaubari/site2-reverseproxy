@@ -1,0 +1,35 @@
+services:
+  web1:
+    container_name: web1
+    image: web1
+    build:
+      context: web1
+    networks:
+      site-2-net:
+        ipv4_address: 172.19.0.13
+  web2:
+    container_name: web2
+    image: web2
+    build:
+      context: web2
+    networks:
+      site-2-net:
+        ipv4_address: 172.19.0.14
+  haproxy1:
+    container_name: haproxy1
+    image: haproxy1
+    ports:
+      - "80:80"
+    build:
+      context: haproxy1
+    networks:
+      site-2-net:
+        ipv4_address: 172.19.0.12
+networks:
+  site-2-net:
+    name: site-2-net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.19.0.0/16
+
