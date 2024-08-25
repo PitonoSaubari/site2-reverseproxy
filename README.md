@@ -68,7 +68,7 @@ Port: 8080
 
 ### Container 3
 
-Service: NGINX
+Service: HAProxy
 Bridge IP address: 172.19.0.12
 Port: 80
 
