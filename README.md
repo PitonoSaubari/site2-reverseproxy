@@ -56,19 +56,19 @@ Details of the containers:
 
 ### Container 1
 
-Service: Apache httpd
-Bridge IP address: 172.19.0.13
+Service: Apache httpd  
+Bridge IP address: 172.19.0.13  
 Port: 8080
 
 ### Container 2
 
-Service: Apache httpd
-Bridge IP address: 172.19.0.14
+Service: Apache httpd  
+Bridge IP address: 172.19.0.14  
 Port: 8080
 
 ### Container 3
 
-Service: HAProxy
-Bridge IP address: 172.19.0.12
+Service: HAProxy  
+Bridge IP address: 172.19.0.12  
 Port: 80
 
